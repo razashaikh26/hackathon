@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Clear FinVoice Storage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 50px;
+            text-align: center;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        button {
+            background-color: #1976d2;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 10px;
+        }
+        button:hover {
+            background-color: #1565c0;
+        }
+        .success {
+            color: green;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>FinVoice Storage Manager</h1>
+        <p>Use this tool to clear localStorage for testing purposes.</p>
+        
+        <button onclick="clearStorage()">Clear All Storage</button>
+        <button onclick="openFinVoice()">Open FinVoice</button>
+        
+        <div id="message"></div>
+        
+        <div style="margin-top: 30px;">
+            <h3>Current Storage:</h3>
+            <div id="storage-info" style="text-align: left; font-family: monospace; font-size: 12px;"></div>
+        </div>
+    </div>
+
+    <script>
+        function clearStorage() {
+            localStorage.clear();
+            sessionStorage.clear();
+            document.getElementById('message').innerHTML = '<div class="success">✅ Storage cleared successfully!</div>';
+            updateStorageInfo();
+        }
+        
+        function openFinVoice() {
+            window.open('http://localhost:3000', '_blank');
+        }
+        
+        function updateStorageInfo() {
+            const storageDiv = document.getElementById('storage-info');
+            const items = [];
+            
+            for (let i = 0; i < localStorage.length; i++) {
+                const key = localStorage.key(i);
+                const value = localStorage.getItem(key);
+                items.push(`${key}: ${value.substring(0, 100)}${value.length > 100 ? '...' : ''}`);
+            }
+            
+            if (items.length === 0) {
+                storageDiv.innerHTML = '<em>No items in localStorage</em>';
+            } else {
+                storageDiv.innerHTML = items.join('<br>');
+            }
+        }
+        
+        // Update storage info on page load
+        updateStorageInfo();
+        
+        // Auto-refresh storage info every 2 seconds
+        setInterval(updateStorageInfo, 2000);
+    </script>
+</body>
+</html>

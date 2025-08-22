@@ -1,0 +1,426 @@
+
+> finvoice-frontend@1.0.0 start
+> react-scripts start
+
+(node:16513) [DEP_WEBPACK_DEV_SERVER_ON_AFTER_SETUP_MIDDLEWARE] DeprecationWarning: 'onAfterSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+(node:16513) [DEP_WEBPACK_DEV_SERVER_ON_BEFORE_SETUP_MIDDLEWARE] DeprecationWarning: 'onBeforeSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+Starting the development server...
+
+Compiled with warnings.
+
+[eslint] 
+src/config/constants.ts
+  Line 90:1:  Assign object to a variable before exporting as module default  import/no-anonymous-default-export
+
+src/pages/Dashboard/Dashboard.tsx
+  Line 41:50:  'FinancialOverview' is defined but never used  @typescript-eslint/no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/config/constants.ts
+  Line 90:1:  Assign object to a variable before exporting as module default  import/no-anonymous-default-export
+
+src/pages/Dashboard/Dashboard.tsx
+  Line 41:50:  'FinancialOverview' is defined but never used  @typescript-eslint/no-unused-vars
+
+webpack compiled with 1 warning
+ERROR in src/pages/Portfolio/Portfolio.tsx:132:43
+TS2554: Expected 1 arguments, but got 0.
+    130 |       // Fetch performance metrics
+    131 |       try {
+  > 132 |         const perfData = await apiService.getPortfolioPerformance();
+        |                                           ^^^^^^^^^^^^^^^^^^^^^^^^^
+    133 |         setPerformanceData(perfData);
+    134 |       } catch (e) {
+    135 |         console.log('Performance data not available');
+
+ERROR in src/pages/Portfolio/Portfolio.tsx:155:13
+TS2322: Type '{ id: string; symbol: string; name: string; type: string; shares: number; quantity: number; purchasePrice: number; currentPrice: number; value: number; totalValue: number; change: number; gainLoss: number; gainLossPercentage: number; currency: string; }' is not assignable to type 'Holding'.
+  Object literal may only specify known properties, and 'type' does not exist in type 'Holding'.
+    153 |             symbol: 'RELIANCE.NS',
+    154 |             name: 'Reliance Industries Limited',
+  > 155 |             type: 'stock',
+        |             ^^^^^^^^^^^^^
+    156 |             shares: 50,
+    157 |             quantity: 50,
+    158 |             purchasePrice: 2200,
+
+ERROR in src/pages/Portfolio/Portfolio.tsx:171:13
+TS2322: Type '{ id: string; symbol: string; name: string; type: string; shares: number; quantity: number; purchasePrice: number; currentPrice: number; value: number; totalValue: number; change: number; gainLoss: number; gainLossPercentage: number; currency: string; }' is not assignable to type 'Holding'.
+  Object literal may only specify known properties, and 'type' does not exist in type 'Holding'.
+    169 |             symbol: 'TCS.NS',
+    170 |             name: 'Tata Consultancy Services',
+  > 171 |             type: 'stock',
+        |             ^^^^^^^^^^^^^
+    172 |             shares: 30,
+    173 |             quantity: 30,
+    174 |             purchasePrice: 3000,
+
+ERROR in src/pages/Portfolio/Portfolio.tsx:187:13
+TS2322: Type '{ id: string; symbol: string; name: string; type: string; shares: number; quantity: number; purchasePrice: number; currentPrice: number; value: number; totalValue: number; change: number; gainLoss: number; gainLossPercentage: number; currency: string; }' is not assignable to type 'Holding'.
+  Object literal may only specify known properties, and 'type' does not exist in type 'Holding'.
+    185 |             symbol: 'SENSEX',
+    186 |             name: 'BSE Sensex ETF',
+  > 187 |             type: 'etf',
+        |             ^^^^^^^^^^^
+    188 |             shares: 100,
+    189 |             quantity: 100,
+    190 |             purchasePrice: 4000,
+
+ERROR in src/pages/Portfolio/Portfolio.tsx:203:13
+TS2322: Type '{ id: string; symbol: string; name: string; type: string; shares: number; quantity: number; purchasePrice: number; currentPrice: number; value: number; totalValue: number; change: number; gainLoss: number; gainLossPercentage: number; currency: string; }' is not assignable to type 'Holding'.
+  Object literal may only specify known properties, and 'type' does not exist in type 'Holding'.
+    201 |             symbol: 'GOLD',
+    202 |             name: 'Gold ETF',
+  > 203 |             type: 'etf',
+        |             ^^^^^^^^^^^
+    204 |             shares: 200,
+    205 |             quantity: 200,
+    206 |             purchasePrice: 500,
+
+ERROR in src/pages/Portfolio/Portfolio.tsx:303:61
+TS2339: Property 'type' does not exist on type 'Holding'.
+    301 |   // Calculate allocation based on holdings
+    302 |   const allocation = portfolioData.holdings.reduce((acc, holding) => {
+  > 303 |     const existing = acc.find(item => item.name === holding.type.toUpperCase());
+        |                                                             ^^^^
+    304 |     if (existing) {
+    305 |       existing.value += holding.totalValue;
+    306 |     } else {
+
+ERROR in src/pages/Portfolio/Portfolio.tsx:305:33
+TS2339: Property 'totalValue' does not exist on type 'Holding'.
+    303 |     const existing = acc.find(item => item.name === holding.type.toUpperCase());
+    304 |     if (existing) {
+  > 305 |       existing.value += holding.totalValue;
+        |                                 ^^^^^^^^^^
+    306 |     } else {
+    307 |       acc.push({ name: holding.type.toUpperCase(), value: holding.totalValue });
+    308 |     }
+
+ERROR in src/pages/Portfolio/Portfolio.tsx:307:32
+TS2339: Property 'type' does not exist on type 'Holding'.
+    305 |       existing.value += holding.totalValue;
+    306 |     } else {
+  > 307 |       acc.push({ name: holding.type.toUpperCase(), value: holding.totalValue });
+        |                                ^^^^
+    308 |     }
+    309 |     return acc;
+    310 |   }, [] as { name: string; value: number }[]);
+
+ERROR in src/pages/Portfolio/Portfolio.tsx:307:67
+TS2339: Property 'totalValue' does not exist on type 'Holding'.
+    305 |       existing.value += holding.totalValue;
+    306 |     } else {
+  > 307 |       acc.push({ name: holding.type.toUpperCase(), value: holding.totalValue });
+        |                                                                   ^^^^^^^^^^
+    308 |     }
+    309 |     return acc;
+    310 |   }, [] as { name: string; value: number }[]);
+
+ERROR in src/pages/Portfolio/Portfolio.tsx:555:42
+TS2339: Property 'type' does not exist on type 'Holding'.
+    553 |                       <TableCell>
+    554 |                         <Chip
+  > 555 |                           label={holding.type.toUpperCase()}
+        |                                          ^^^^
+    556 |                           color={getAssetTypeColor(holding.type)}
+    557 |                           size="small"
+    558 |                         />
+
+ERROR in src/pages/Portfolio/Portfolio.tsx:556:60
+TS2339: Property 'type' does not exist on type 'Holding'.
+    554 |                         <Chip
+    555 |                           label={holding.type.toUpperCase()}
+  > 556 |                           color={getAssetTypeColor(holding.type)}
+        |                                                            ^^^^
+    557 |                           size="small"
+    558 |                         />
+    559 |                       </TableCell>
+
+ERROR in src/pages/Portfolio/Portfolio.tsx:562:49
+TS2551: Property 'currentPrice' does not exist on type 'Holding'. Did you mean 'current_price'?
+    560 |                       <TableCell align="right">{holding.quantity}</TableCell>
+    561 |                       <TableCell align="right">
+  > 562 |                         {formatCurrency(holding.currentPrice, holding.currency)}
+        |                                                 ^^^^^^^^^^^^
+    563 |                       </TableCell>
+    564 |                       <TableCell align="right">
+    565 |                         {formatCurrency(holding.totalValue, holding.currency)}
+
+ERROR in src/pages/Portfolio/Portfolio.tsx:565:49
+TS2339: Property 'totalValue' does not exist on type 'Holding'.
+    563 |                       </TableCell>
+    564 |                       <TableCell align="right">
+  > 565 |                         {formatCurrency(holding.totalValue, holding.currency)}
+        |                                                 ^^^^^^^^^^
+    566 |                       </TableCell>
+    567 |                       <TableCell align="right">
+    568 |                         <Box
+
+ERROR in src/pages/Portfolio/Portfolio.tsx:569:42
+TS2339: Property 'gainLoss' does not exist on type 'Holding'.
+    567 |                       <TableCell align="right">
+    568 |                         <Box
+  > 569 |                           color={holding.gainLoss > 0 ? 'success.main' : 'error.main'}
+        |                                          ^^^^^^^^
+    570 |                         >
+    571 |                           {formatCurrency(holding.gainLoss, holding.currency)} (
+    572 |                           {formatPercentage(holding.gainLossPercentage)})
+
+ERROR in src/pages/Portfolio/Portfolio.tsx:571:51
+TS2339: Property 'gainLoss' does not exist on type 'Holding'.
+    569 |                           color={holding.gainLoss > 0 ? 'success.main' : 'error.main'}
+    570 |                         >
+  > 571 |                           {formatCurrency(holding.gainLoss, holding.currency)} (
+        |                                                   ^^^^^^^^
+    572 |                           {formatPercentage(holding.gainLossPercentage)})
+    573 |                         </Box>
+    574 |                       </TableCell>
+
+ERROR in src/pages/Portfolio/Portfolio.tsx:572:53
+TS2339: Property 'gainLossPercentage' does not exist on type 'Holding'.
+    570 |                         >
+    571 |                           {formatCurrency(holding.gainLoss, holding.currency)} (
+  > 572 |                           {formatPercentage(holding.gainLossPercentage)})
+        |                                                     ^^^^^^^^^^^^^^^^^^
+    573 |                         </Box>
+    574 |                       </TableCell>
+    575 |                       <TableCell align="right">
+
+ERROR in src/pages/Portfolio/Portfolio.tsx:628:42
+TS2339: Property 'gainLossPercentage' does not exist on type 'Holding'.
+    626 |                   <BarChart data={portfolioData.holdings.map(holding => ({ 
+    627 |                     symbol: holding.symbol.split('.')[0], // Remove .NS suffix for display
+  > 628 |                     performance: holding.gainLossPercentage 
+        |                                          ^^^^^^^^^^^^^^^^^^
+    629 |                   }))}>
+    630 |                     <CartesianGrid strokeDasharray="3 3" />
+    631 |                     <XAxis dataKey="symbol" />
+
+ERROR in src/pages/Portfolio/Portfolio.tsx:652:40
+TS2339: Property 'totalValue' does not exist on type 'Holding'.
+    650 |                       data={portfolioData.holdings.map(holding => ({ 
+    651 |                         name: holding.symbol.split('.')[0], // Remove .NS suffix for display
+  > 652 |                         value: holding.totalValue 
+        |                                        ^^^^^^^^^^
+    653 |                       }))}
+    654 |                       cx="50%"
+    655 |                       cy="50%"
+
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/config/constants.ts
+  Line 90:1:  Assign object to a variable before exporting as module default  import/no-anonymous-default-export
+
+src/pages/Dashboard/Dashboard.tsx
+  Line 41:50:  'FinancialOverview' is defined but never used  @typescript-eslint/no-unused-vars
+
+src/pages/Portfolio/Portfolio.tsx
+  Line 61:10:  'DEMO_USER_ID' is defined but never used              @typescript-eslint/no-unused-vars
+  Line 67:10:  'performanceData' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/config/constants.ts
+  Line 90:1:  Assign object to a variable before exporting as module default  import/no-anonymous-default-export
+
+src/pages/Dashboard/Dashboard.tsx
+  Line 41:50:  'FinancialOverview' is defined but never used  @typescript-eslint/no-unused-vars
+
+src/pages/Portfolio/Portfolio.tsx
+  Line 61:10:  'DEMO_USER_ID' is defined but never used              @typescript-eslint/no-unused-vars
+  Line 67:10:  'performanceData' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+webpack compiled with 1 warning
+ERROR in src/pages/Portfolio/Portfolio.tsx:133:43
+TS2554: Expected 1 arguments, but got 0.
+    131 |       // Fetch performance metrics
+    132 |       try {
+  > 133 |         const perfData = await apiService.getPortfolioPerformance();
+        |                                           ^^^^^^^^^^^^^^^^^^^^^^^^^
+    134 |         setPerformanceData(perfData);
+    135 |       } catch (e) {
+    136 |         console.log('Performance data not available');
+
+ERROR in src/pages/Portfolio/Portfolio.tsx:156:13
+TS2322: Type '{ id: string; symbol: string; name: string; type: string; shares: number; quantity: number; purchasePrice: number; currentPrice: number; value: number; totalValue: number; change: number; gainLoss: number; gainLossPercentage: number; currency: string; }' is not assignable to type 'Holding'.
+  Object literal may only specify known properties, and 'type' does not exist in type 'Holding'.
+    154 |             symbol: 'RELIANCE.NS',
+    155 |             name: 'Reliance Industries Limited',
+  > 156 |             type: 'stock',
+        |             ^^^^^^^^^^^^^
+    157 |             shares: 50,
+    158 |             quantity: 50,
+    159 |             purchasePrice: 2200,
+
+ERROR in src/pages/Portfolio/Portfolio.tsx:172:13
+TS2322: Type '{ id: string; symbol: string; name: string; type: string; shares: number; quantity: number; purchasePrice: number; currentPrice: number; value: number; totalValue: number; change: number; gainLoss: number; gainLossPercentage: number; currency: string; }' is not assignable to type 'Holding'.
+  Object literal may only specify known properties, and 'type' does not exist in type 'Holding'.
+    170 |             symbol: 'TCS.NS',
+    171 |             name: 'Tata Consultancy Services',
+  > 172 |             type: 'stock',
+        |             ^^^^^^^^^^^^^
+    173 |             shares: 30,
+    174 |             quantity: 30,
+    175 |             purchasePrice: 3000,
+
+ERROR in src/pages/Portfolio/Portfolio.tsx:188:13
+TS2322: Type '{ id: string; symbol: string; name: string; type: string; shares: number; quantity: number; purchasePrice: number; currentPrice: number; value: number; totalValue: number; change: number; gainLoss: number; gainLossPercentage: number; currency: string; }' is not assignable to type 'Holding'.
+  Object literal may only specify known properties, and 'type' does not exist in type 'Holding'.
+    186 |             symbol: 'SENSEX',
+    187 |             name: 'BSE Sensex ETF',
+  > 188 |             type: 'etf',
+        |             ^^^^^^^^^^^
+    189 |             shares: 100,
+    190 |             quantity: 100,
+    191 |             purchasePrice: 4000,
+
+ERROR in src/pages/Portfolio/Portfolio.tsx:204:13
+TS2322: Type '{ id: string; symbol: string; name: string; type: string; shares: number; quantity: number; purchasePrice: number; currentPrice: number; value: number; totalValue: number; change: number; gainLoss: number; gainLossPercentage: number; currency: string; }' is not assignable to type 'Holding'.
+  Object literal may only specify known properties, and 'type' does not exist in type 'Holding'.
+    202 |             symbol: 'GOLD',
+    203 |             name: 'Gold ETF',
+  > 204 |             type: 'etf',
+        |             ^^^^^^^^^^^
+    205 |             shares: 200,
+    206 |             quantity: 200,
+    207 |             purchasePrice: 500,
+
+ERROR in src/pages/Portfolio/Portfolio.tsx:304:61
+TS2339: Property 'type' does not exist on type 'Holding'.
+    302 |   // Calculate allocation based on holdings
+    303 |   const allocation = portfolioData.holdings.reduce((acc, holding) => {
+  > 304 |     const existing = acc.find(item => item.name === holding.type.toUpperCase());
+        |                                                             ^^^^
+    305 |     if (existing) {
+    306 |       existing.value += holding.totalValue;
+    307 |     } else {
+
+ERROR in src/pages/Portfolio/Portfolio.tsx:306:33
+TS2339: Property 'totalValue' does not exist on type 'Holding'.
+    304 |     const existing = acc.find(item => item.name === holding.type.toUpperCase());
+    305 |     if (existing) {
+  > 306 |       existing.value += holding.totalValue;
+        |                                 ^^^^^^^^^^
+    307 |     } else {
+    308 |       acc.push({ name: holding.type.toUpperCase(), value: holding.totalValue });
+    309 |     }
+
+ERROR in src/pages/Portfolio/Portfolio.tsx:308:32
+TS2339: Property 'type' does not exist on type 'Holding'.
+    306 |       existing.value += holding.totalValue;
+    307 |     } else {
+  > 308 |       acc.push({ name: holding.type.toUpperCase(), value: holding.totalValue });
+        |                                ^^^^
+    309 |     }
+    310 |     return acc;
+    311 |   }, [] as { name: string; value: number }[]);
+
+ERROR in src/pages/Portfolio/Portfolio.tsx:308:67
+TS2339: Property 'totalValue' does not exist on type 'Holding'.
+    306 |       existing.value += holding.totalValue;
+    307 |     } else {
+  > 308 |       acc.push({ name: holding.type.toUpperCase(), value: holding.totalValue });
+        |                                                                   ^^^^^^^^^^
+    309 |     }
+    310 |     return acc;
+    311 |   }, [] as { name: string; value: number }[]);
+
+ERROR in src/pages/Portfolio/Portfolio.tsx:556:42
+TS2339: Property 'type' does not exist on type 'Holding'.
+    554 |                       <TableCell>
+    555 |                         <Chip
+  > 556 |                           label={holding.type.toUpperCase()}
+        |                                          ^^^^
+    557 |                           color={getAssetTypeColor(holding.type)}
+    558 |                           size="small"
+    559 |                         />
+
+ERROR in src/pages/Portfolio/Portfolio.tsx:557:60
+TS2339: Property 'type' does not exist on type 'Holding'.
+    555 |                         <Chip
+    556 |                           label={holding.type.toUpperCase()}
+  > 557 |                           color={getAssetTypeColor(holding.type)}
+        |                                                            ^^^^
+    558 |                           size="small"
+    559 |                         />
+    560 |                       </TableCell>
+
+ERROR in src/pages/Portfolio/Portfolio.tsx:563:49
+TS2551: Property 'currentPrice' does not exist on type 'Holding'. Did you mean 'current_price'?
+    561 |                       <TableCell align="right">{holding.quantity}</TableCell>
+    562 |                       <TableCell align="right">
+  > 563 |                         {formatCurrency(holding.currentPrice, holding.currency)}
+        |                                                 ^^^^^^^^^^^^
+    564 |                       </TableCell>
+    565 |                       <TableCell align="right">
+    566 |                         {formatCurrency(holding.totalValue, holding.currency)}
+
+ERROR in src/pages/Portfolio/Portfolio.tsx:566:49
+TS2339: Property 'totalValue' does not exist on type 'Holding'.
+    564 |                       </TableCell>
+    565 |                       <TableCell align="right">
+  > 566 |                         {formatCurrency(holding.totalValue, holding.currency)}
+        |                                                 ^^^^^^^^^^
+    567 |                       </TableCell>
+    568 |                       <TableCell align="right">
+    569 |                         <Box
+
+ERROR in src/pages/Portfolio/Portfolio.tsx:570:42
+TS2339: Property 'gainLoss' does not exist on type 'Holding'.
+    568 |                       <TableCell align="right">
+    569 |                         <Box
+  > 570 |                           color={holding.gainLoss > 0 ? 'success.main' : 'error.main'}
+        |                                          ^^^^^^^^
+    571 |                         >
+    572 |                           {formatCurrency(holding.gainLoss, holding.currency)} (
+    573 |                           {formatPercentage(holding.gainLossPercentage)})
+
+ERROR in src/pages/Portfolio/Portfolio.tsx:572:51
+TS2339: Property 'gainLoss' does not exist on type 'Holding'.
+    570 |                           color={holding.gainLoss > 0 ? 'success.main' : 'error.main'}
+    571 |                         >
+  > 572 |                           {formatCurrency(holding.gainLoss, holding.currency)} (
+        |                                                   ^^^^^^^^
+    573 |                           {formatPercentage(holding.gainLossPercentage)})
+    574 |                         </Box>
+    575 |                       </TableCell>
+
+ERROR in src/pages/Portfolio/Portfolio.tsx:573:53
+TS2339: Property 'gainLossPercentage' does not exist on type 'Holding'.
+    571 |                         >
+    572 |                           {formatCurrency(holding.gainLoss, holding.currency)} (
+  > 573 |                           {formatPercentage(holding.gainLossPercentage)})
+        |                                                     ^^^^^^^^^^^^^^^^^^
+    574 |                         </Box>
+    575 |                       </TableCell>
+    576 |                       <TableCell align="right">
+
+ERROR in src/pages/Portfolio/Portfolio.tsx:629:42
+TS2339: Property 'gainLossPercentage' does not exist on type 'Holding'.
+    627 |                   <BarChart data={portfolioData.holdings.map(holding => ({ 
+    628 |                     symbol: holding.symbol.split('.')[0], // Remove .NS suffix for display
+  > 629 |                     performance: holding.gainLossPercentage 
+        |                                          ^^^^^^^^^^^^^^^^^^
+    630 |                   }))}>
+    631 |                     <CartesianGrid strokeDasharray="3 3" />
+    632 |                     <XAxis dataKey="symbol" />
+
+ERROR in src/pages/Portfolio/Portfolio.tsx:653:40
+TS2339: Property 'totalValue' does not exist on type 'Holding'.
+    651 |                       data={portfolioData.holdings.map(holding => ({ 
+    652 |                         name: holding.symbol.split('.')[0], // Remove .NS suffix for display
+  > 653 |                         value: holding.totalValue 
+        |                                        ^^^^^^^^^^
+    654 |                       }))}
+    655 |                       cx="50%"
+    656 |                       cy="50%"
+

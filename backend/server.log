@@ -1,0 +1,183 @@
+/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pydub/utils.py:170: RuntimeWarning: Couldn't find ffmpeg or avconv - defaulting to ffmpeg, but may not work
+  warn("Couldn't find ffmpeg or avconv - defaulting to ffmpeg, but may not work", RuntimeWarning)
+INFO:app.services.blockchain_service:Blockchain service in mock mode (no private key)
+INFO:app.services.vapi_voice_service:Vapi Voice Service initialized with secure configuration
+INFO:     Started server process [71589]
+INFO:     Waiting for application startup.
+2025-08-23 04:11:43 [info     ] Database tables created successfully
+2025-08-23 04:11:44 [warning  ] Redis connection failed: Connection closed by server.. Application will continue without caching.
+INFO:app.main:FinVoice application started successfully
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+2025-08-23 04:12:29 [info     ] Processing enhanced voice message for user: demo_user
+INFO:app.services.voice_service:OpenAI client initialized successfully
+INFO:app.services.voice_service:Enhanced Voice Service initialized with Indian language support and TTS
+INFO:app.services.voice_service:Using text content for testing: what is my account balance
+2025-08-23 04:12:29 [info     ] Transcription: what is my account balance
+2025-08-23 04:12:29 [info     ] Enhanced voice processing completed successfully for user: demo_user
+INFO:     127.0.0.1:57556 - "POST /api/v1/voice/enhanced-message HTTP/1.1" 200 OK
+2025-08-23 04:12:44 [info     ] Processing enhanced voice message for user: demo_user
+INFO:app.services.voice_service:OpenAI client initialized successfully
+INFO:app.services.voice_service:Enhanced Voice Service initialized with Indian language support and TTS
+INFO:app.services.voice_service:Using text content for testing: what is my account balance
+2025-08-23 04:12:44 [info     ] Transcription: what is my account balance
+2025-08-23 04:12:44 [info     ] Enhanced voice processing completed successfully for user: demo_user
+INFO:     127.0.0.1:57736 - "POST /api/v1/voice/enhanced-message HTTP/1.1" 200 OK
+2025-08-23 04:12:53 [info     ] Processing enhanced voice message for user: demo_user
+INFO:app.services.voice_service:OpenAI client initialized successfully
+INFO:app.services.voice_service:Enhanced Voice Service initialized with Indian language support and TTS
+INFO:app.services.voice_service:Using text content for testing: show me my expenses this month
+2025-08-23 04:12:53 [info     ] Transcription: show me my expenses this month
+2025-08-23 04:12:53 [info     ] Enhanced voice processing completed successfully for user: demo_user
+INFO:     127.0.0.1:57853 - "POST /api/v1/voice/enhanced-message HTTP/1.1" 200 OK
+2025-08-23 04:13:03 [info     ] Processing enhanced voice message for user: demo_user
+INFO:app.services.voice_service:OpenAI client initialized successfully
+INFO:app.services.voice_service:Enhanced Voice Service initialized with Indian language support and TTS
+INFO:app.services.voice_service:Using text content for testing: how is my portfolio performing
+2025-08-23 04:13:03 [info     ] Transcription: how is my portfolio performing
+2025-08-23 04:13:03 [info     ] Enhanced voice processing completed successfully for user: demo_user
+INFO:     127.0.0.1:57972 - "POST /api/v1/voice/enhanced-message HTTP/1.1" 200 OK
+INFO:     (None, 0) - "WebSocket /ws" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     connection closed
+INFO:     None:0 - "GET /manifest.json HTTP/1.1" 404 Not Found
+INFO:     (None, 0) - "WebSocket /ws" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     connection closed
+INFO:     (None, 0) - "WebSocket /ws" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     connection closed
+INFO:     (None, 0) - "WebSocket /ws" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     connection closed
+INFO:     127.0.0.1:58185 - "GET /api/v1/db/overview?user_id=378780bc-cb28-42bc-811d-b86ce74a928b HTTP/1.1" 200 OK
+INFO:     (None, 0) - "WebSocket /ws" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     connection closed
+INFO:     127.0.0.1:58186 - "GET /api/v1/db/overview?user_id=378780bc-cb28-42bc-811d-b86ce74a928b HTTP/1.1" 200 OK
+INFO:     (None, 0) - "WebSocket /ws" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     connection closed
+INFO:     (None, 0) - "WebSocket /ws" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     connection closed
+INFO:     (None, 0) - "WebSocket /ws" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     connection closed
+INFO:     (None, 0) - "WebSocket /ws" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     connection closed
+INFO:     (None, 0) - "WebSocket /ws" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     connection closed
+INFO:     (None, 0) - "WebSocket /ws" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     connection closed
+INFO:     (None, 0) - "WebSocket /ws" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     connection closed
+INFO:     (None, 0) - "WebSocket /ws" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     connection closed
+INFO:     (None, 0) - "WebSocket /ws" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     connection closed
+INFO:     (None, 0) - "WebSocket /ws" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     connection closed
+INFO:     (None, 0) - "WebSocket /ws" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     connection closed
+INFO:     (None, 0) - "WebSocket /ws" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     connection closed
+INFO:     (None, 0) - "WebSocket /ws" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     connection closed
+INFO:     (None, 0) - "WebSocket /ws" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     connection closed
+INFO:     (None, 0) - "WebSocket /ws" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     connection closed
+INFO:     (None, 0) - "WebSocket /ws" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     connection closed
+INFO:     127.0.0.1:58483 - "GET /api/v1/vapi/config HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58484 - "GET /api/v1/vapi/config HTTP/1.1" 200 OK
+INFO:     (None, 0) - "WebSocket /ws" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     connection closed
+INFO:     (None, 0) - "WebSocket /ws" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     connection closed
+INFO:     (None, 0) - "WebSocket /ws" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     connection closed
+INFO:     (None, 0) - "WebSocket /ws" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     connection closed
+INFO:     (None, 0) - "WebSocket /ws" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     connection closed
+INFO:     (None, 0) - "WebSocket /ws" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     connection closed
+INFO:     (None, 0) - "WebSocket /ws" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     connection closed
+INFO:     (None, 0) - "WebSocket /ws" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     connection closed
+INFO:     (None, 0) - "WebSocket /ws" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     connection closed
+INFO:     (None, 0) - "WebSocket /ws" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     connection closed
+INFO:     (None, 0) - "WebSocket /ws" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     connection closed
+INFO:     (None, 0) - "WebSocket /ws" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     connection closed
+2025-08-23 04:13:43 [info     ] Processing enhanced voice message for user: demo_user
+INFO:app.services.voice_service:OpenAI client initialized successfully
+INFO:app.services.voice_service:Enhanced Voice Service initialized with Indian language support and TTS
+/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pydub/utils.py:198: RuntimeWarning: Couldn't find ffprobe or avprobe - defaulting to ffprobe, but may not work
+  warn("Couldn't find ffprobe or avprobe - defaulting to ffprobe, but may not work", RuntimeWarning)
+WARNING:app.services.voice_service:Audio conversion failed: [Errno 2] No such file or directory: 'ffprobe'
+INFO:app.services.voice_service:Mock transcription for en-IN: Petrol 2000 rupees
+2025-08-23 04:13:43 [info     ] Transcription: Petrol 2000 rupees
+2025-08-23 04:13:43 [info     ] Enhanced voice processing completed successfully for user: demo_user
+INFO:     127.0.0.1:58609 - "POST /api/v1/voice/enhanced-message HTTP/1.1" 200 OK
+INFO:     (None, 0) - "WebSocket /ws" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     connection closed
+INFO:     (None, 0) - "WebSocket /ws" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     connection closed
+INFO:     (None, 0) - "WebSocket /ws" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     connection closed
+INFO:     (None, 0) - "WebSocket /ws" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     connection closed
+INFO:     (None, 0) - "WebSocket /ws" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     connection closed
+INFO:     (None, 0) - "WebSocket /ws" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     connection closed
+INFO:     (None, 0) - "WebSocket /ws" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     connection closed
+INFO:     (None, 0) - "WebSocket /ws" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     connection closed
+INFO:     (None, 0) - "WebSocket /ws" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     connection closed
+INFO:     (None, 0) - "WebSocket /ws" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     connection closed
